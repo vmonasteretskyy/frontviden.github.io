@@ -5,6 +5,10 @@
     .container-left{
         margin: 0 0 0 10%;
     }
+    .header-line .top li.contact-btn a, 
+    .header-line .bottom li.contact-btn a{
+        padding: 8px 20px;
+    }
     .first-main{
         height: 900px;
     }
@@ -16,8 +20,47 @@
     .three-main{
         margin-top: 200px;
     }
+    .case-posts .item .desc{
+        width: 350px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
     .five-main .block{
         width: 60%;
+    }
+    .five-main .block .block-form form .input-block.name-input{
+        width: 30%;
+    }
+    .five-main .block .block-form form .input-block input{
+        line-height: 20px;
+        padding: 13px 10px 13px 15px;
+    }
+    .five-main .block .block-form form input[type="submit"]{
+        padding: 15px 50px;
+    }
+
+    .header-line.other-page-header .container-big{
+        height: 100px;
+    }
+    .second-main .top ul{
+        margin-top: 50px;
+    }
+    footer .last-col{
+        width: 20%;
+    }
+    footer .first-col>a img{
+        width: 115%;
+    }
+    /* about */
+    .about-top{
+        padding-top: 200px;
+    }
+    .about-top::before{
+        width: 75%;
+        height: 75%;
+    }
+    .about-topic .text-block{
+        padding-top: 100px;
     }
 }
 @media(max-width:1440.8px) {
@@ -29,7 +72,7 @@
     }
     .second-main .top{
         width: 70%;
-        margin-top: 100px;
+        padding-top: 100px;
     }
     .second-main .top .text{
         margin-top: 35px;
@@ -55,6 +98,10 @@
         padding-top: 80px;
         padding-bottom: 50px;
     }
+    /* case */
+    .case-body-main {
+        padding: 250px 0 200px;
+    }
 }
 @media(max-width:1300.8px) {
     .header-line .bottom>li{
@@ -72,6 +119,31 @@
     .five-main .block .block-form form .input-block input{
         line-height: 15px;
     }
+    /* about */
+    .about-top .text{
+        width: 80%;
+        margin-top: 55px;
+    }
+    .about-top ul{
+        margin-top: 60px;
+    }
+    .about-team ul li .img{
+        height: 250px;
+    }
+    .about-topic{
+        background-position-x: 40%;
+    }
+    .about-client{
+        margin-top: 130px;
+    }
+    .join-team .img img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .join-team{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 @media(max-width:1150.8px) {
     .first-main {
@@ -79,6 +151,9 @@
     }
     .second-main{
         padding-bottom: 100px;
+    }
+    footer .first-col>a img{
+        width: auto;
     }
     footer .middle-col{
         width: 40%;
@@ -96,6 +171,34 @@
     }
     footer p.titel{
         margin-top: 25px;
+    }
+    /* about */
+    .about-client ul.clients{
+        margin-top: 50px;
+    }
+    .about-client ul.clients li{
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+    .about-client ul.clients li img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .about-client ul.indicators{
+        margin-top: 100px;
+    }
+    /* case */
+    .case-body-main {
+        padding: 150px 0 100px;
+    }
+    .case-body-main .nav-blocks{
+        margin-top: 50px;
+    }
+    .case-body-main .case-posts .item{
+        padding: 30px;
     }
 }
 @media(max-width:1024.8px) {
@@ -175,13 +278,37 @@
     footer .address{
         margin-top: 30px;
     }
+    /* about */
+    .about-team ul li .img{
+        height: 200px;
+    }
+    .about-top{
+        padding-top: 150px;
+    }
+    .about-team,
+    .about-topic,
+    .about-client{
+        margin-top: 100px;
+    }
+    .about-topic .text-block{
+        padding-bottom: 100px;
+    }
+    .join-team{
+        padding: 100px 0;
+    }
 }
 @media(max-width:768.8px) {
     .first-main {
         height: 430px;
     }
-    .header-line{
+    /* .header-line{
         margin: 10px 0;
+    } */
+    .header-line.header-line.other-page-header{
+        margin: 0;
+    }
+    .header-line.other-page-header .container-big{
+        height: 80px;
     }
     .header-line .container-big{
         height: auto;
@@ -252,17 +379,17 @@
         background: #ffffff;
         z-index: 10;
         position: absolute;
-        left: 0; top: 0;
+        right: 0; top: 0;
         display: flex;
         justify-content: center;
         width: 100%;
         height: auto;
         transition: 1s;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         padding-top: 80px;
     }
     .nav-bar-active .menu-body-mobile{
-        transform: translateY(0%);
+        transform: translateX(0%);
         height: 100vh;
     }
     .menu-body-mobile .nav-mobile{
@@ -292,8 +419,12 @@
         display: block;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 10px;
+        height: 5px;
         width: 10px;
+        transition: .5s ease;
+    }
+    .menu-body-mobile ul>li.menu-item-has-children.active>a::after{
+        transform: rotate(180deg);
     }
     .header-line li.active .sub-menu{
         position: relative;
@@ -409,10 +540,75 @@
         text-align: center;
         margin-bottom: 20px;
     }
+    /* about */
+    .about-team ul li{
+        width: 48%;
+    }
+    .about-team ul li .img{
+        height: auto;
+    }
+    .about-team ul.if-two li{
+        margin: 0;
+    }
+    .about-team ul.if-two{
+        justify-content: space-between;
+    }
+    .about-topic .text-block{
+        width: 80%;
+    }
+    .about-client ul.indicators{
+        flex-wrap: wrap;
+    }
+    .about-client ul.indicators li{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    .join-team .container{
+        flex-wrap: wrap;
+    }
+    .join-team .text,
+    .join-team .img{
+        width: 100%;
+    }
+    .join-team .img{
+        order: 1;
+    }
+    .join-team .text{
+        order: 2;
+    }
+    .join-team .text p{
+        margin-top: 20px;
+    }
+    .join-team .text .blue-btn{
+        margin-top: 30px;
+    }
+    /* case */
+    .case-body-main{
+        padding-top: 100px;
+    }
+    .case-body-main .nav-blocks{
+        flex-wrap: wrap;
+    }
+    .case-body-main .nav-blocks li{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    .case-body-main .case-posts{
+        margin-top: 50px;
+    }
+    .case-body-main .case-posts .item{
+        width: 38%;
+    }
 }
 @media(max-width:500.8px) {
+    .blue-btn{
+        font-size: 12px;
+    }
     .header-line .container-big .right{
         width: 25%;
+    }
+    .first-main {
+        height: 500px;
     }
     .first-main .video-bg{
         background-image: url(../img/mob_bg.png);
@@ -455,6 +651,9 @@
         font-size: 12px;
         padding: 8px 20px;
     }
+    .second-main .top{
+        padding-top: 50px;
+    }
     .second-main .top .text{
         font-size: 12px;
         line-height: 20px;
@@ -480,9 +679,13 @@
         height: 8px;
         width: 12px;
     }
+    .second-main .bottom ul li.title::before{
+        display: none;
+    }
     .second-main::after{
-        background-image: url(../img/About_Banner2.png);
-        height: 30%;
+        /* background-image: url(../img/About_Banner2.png); */
+        height: 35%;
+        width: 150%;
     }
     .second-main .top ul li img{
         height: 50%;
@@ -494,22 +697,37 @@
         margin-top: 20px;
     }
     .three-main .block-items .item{
-        width: 80%;
+        width: 90%;
     }
     .three-main .block-items .item{
-        margin-top: 150px;
+        margin-top: 120px;
+    }
+    .three-main .block-items .item .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -80px;
+    }
+    .three-main .block-items .item .img img{
+        width: 80%;
     }
     .four-main::after {
-        width: 40%;
-        height: 30%;
+        width: 60%;
+        height: 50%;
+        z-index: -1;
     }
-    .four-main .slider-case .item{
+    .case-posts .item{
         padding: 20px;
     }
-    .four-main .slider-case .item .desc{
+    .case-posts .item .desc{
         font-size: 12px;
         line-height: 18px;
         width: 200px;
+    }
+    .four-main{
+        padding-top: 90px;
+        padding-bottom: 100px;
+        z-index: 1;
     }
     .five-main .block .subtitle{
         display: none;
@@ -534,5 +752,117 @@
     }
     footer .contact-info ul{
         width: 45%;
+    }
+    /* about */
+    .about-top::before{
+        width: 50%;
+        height: 50%;
+    }
+    .about-top{
+        padding-top: 100px;
+    }
+    .about-top .text{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .about-top ul li{
+        height: 100px;
+        margin-bottom: 0;
+    }
+    .about-top ul li img{
+        height: 50%;
+        width: auto;
+        object-fit: contain;
+    }
+    .about-team, 
+    .about-topic, 
+    .about-client{
+        margin-top: 60px;
+    }
+    .about-topic {
+        background-position-x: 50%;
+    }
+    .about-topic .text-block{
+        width: 90%;
+    }
+    .about-topic .text-block p,
+    .join-team .text p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .about-topic .text-block p:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .about-client ul.clients li{
+        width: 48%;
+    }
+    .about-client h3{
+        font-size: 30px;
+    }
+    .about-client ul.indicators li .desc{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .about-client ul.indicators li .number{
+        font-size: 24px;
+    }
+    .about-client ul.indicators li{
+        height: 60px;
+    }
+    .join-team .text h3{
+        text-align: left;
+    }
+    .join-team::after{
+        width: 60%;
+        height: 120%;
+    }
+    .blue-btn{
+        font-size: 12px;
+    }
+    .join-team .text .blue-btn{
+        padding: 10px 20px;
+    }
+    /* case */
+    .case-body-main .case-posts{
+        justify-content: center;
+    }
+    .case-body-main .case-posts .item{
+        width: 80%;
+    }
+    .case-body-main .navbar-mobile-btn{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 16px 20px 13px;
+        color: #124dd9;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-family: MBold;
+    }
+    .case-body-main .navbar-mobile-btn::after{
+        content: "";
+        background-image: url(../img/icon/key.svg);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 12px;
+        width: 15px;
+    }
+    .case-body-main .nav-blocks{
+        display: none;
+    }
+    .active-menu-case .mobile-menu{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
     }
 }
