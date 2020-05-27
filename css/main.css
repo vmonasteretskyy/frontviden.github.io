@@ -300,8 +300,8 @@ body.scroll-stop{
     background-image: url(../img/About_Banner.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100%;
+    width: 92%;
+    height: 88%;
     right: 0%;
     bottom: -20%;
     z-index: 0;
@@ -1198,17 +1198,18 @@ footer .contact-info{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.grid-sizer{
+    width: 33.3%;
+}
 .blog-posts .item{
-    /* margin: 0 10px; */
-    margin-bottom: 40px;
-    width: 31%;
+    height: auto;
+    margin: 0 10px;
+    margin-bottom: 70px;
+    width: 31.3%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     transition: .5s ease;
-}
-.grid-sizer{
-    width: 31%;
 }
 .blog-posts .item .img{
     display: block;
@@ -1309,4 +1310,83 @@ footer .contact-info{
 .btn-more-posts .blue-btn{
     padding: 12px 50px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* ========== blog-open =========== */
+/* .blog-open::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/romb_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+}
+.blog-open::before{
+    transform: rotate(180deg);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    background-image: url(../img/romb1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 40%;
+    height: 40%;
+    z-index: -1;
+} */
+.blog-open .top{
+    padding-top: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-open .top h3{
+    margin-top: 20px;
+    width: 70%;
+    font-family: MExtraBold;
+    font-size: 36px;
+    line-height: 40px;
+}
+.blog-open .top .tags{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.blog-open .top .tags li{
+    margin: 0 10px;
+}
+.blog-open .top .tags li a{
+    font-family: MMedium;
+    font-size: 22px;
+    color: #f0f0f0;
+    background-color: #124dd9;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.blog-open .top .data{
+    font-size: 14px;
+    color: #898989;
+    margin-top: 40px;
+}
+.blog-open .body-wp h3{
+    text-align: left;
+    margin-top: 100px;
+}
+.others-posts{
+    margin-top: 100px;
+}
+.others-posts .blog-posts{
+    margin-top: 50px;
+}
+.others-posts .blog-posts .item{
+    margin: 0;
 }

@@ -19,3 +19,29 @@ if(menuBtn[0] != undefined){
         document.querySelector('body').classList.toggle('scroll-stop');
     });
 }
+
+// Case catalog btn open ------------------------------------
+let caseBtn = document.querySelector('.navbar-mobile-btn'),
+    caseClose = document.querySelector('.close');
+    
+if(caseBtn != undefined){
+    caseBtn.addEventListener('click', (e)=> {
+        e.preventDefault();
+        document.querySelector('body').classList.add('scroll-stop');
+        document.querySelector('body').classList.add('active-menu-case');
+    });
+}
+if(caseClose != undefined){
+    caseClose.addEventListener('click', (e)=> {
+        e.preventDefault();
+        document.querySelector('body').classList.remove('scroll-stop');
+        document.querySelector('body').classList.remove('active-menu-case');
+    });
+}
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  itemSelector: '.item',
+  columnWidth: '.grid-sizer',
+//   gutter: 40
+});
