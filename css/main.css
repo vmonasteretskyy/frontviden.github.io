@@ -1312,33 +1312,36 @@ footer .contact-info{
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
 /* ========== blog-open =========== */
-/* .blog-open::after{
+.blog-open{
+    position: relative;
+}
+.blog-open::after{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(../img/romb_right.png);
+    background-image: url(../img/disc2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 54%;
     z-index: -1;
 }
 .blog-open::before{
     transform: rotate(180deg);
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
     left: -5%;
     background-image: url(../img/romb1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     z-index: -1;
-} */
+}
 .blog-open .top{
     padding-top: 350px;
     display: flex;
