@@ -96,6 +96,10 @@ body.scroll-stop{
     border-radius: 10px;
     box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
 }
+.blue-btn:hover{
+    background-color: #062ea9;
+    color: #ffffff;
+}
 .container-big{
     margin: 0 8%;
 }
@@ -147,6 +151,11 @@ body.scroll-stop{
     padding: 12px 24px;
     box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
 }
+.header-line .top li.contact-btn a:hover,
+.header-line .bottom li.contact-btn a:hover{
+    background-color: #062ea9;
+    color: #ffffff;
+}
 
 .header-line .bottom li.contact-btn{
     display: none;
@@ -157,19 +166,26 @@ body.scroll-stop{
     justify-content: flex-end;
 }
 .header-line .bottom>li{
-    margin-left: 90px;
+    margin-left: 10px;
+    width: 33%;
 }
 .header-line .bottom a{
     font-size: 15px;
     font-family: MRegular;
     color: #000000;
 }
+.header-line .bottom>li>a,
 .header-line .bottom li>a{
-    padding: 12px 40px 12px 20px;
+    padding: 12px 20px 12px 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     /* padding-right: 20px; */
     border-radius: 10px;
+}
+.header-line .bottom li .sub-menu a{
+    justify-content: flex-start;
 }
 .header-line .bottom li:hover>a{
     color: #124dd9;
@@ -183,15 +199,13 @@ body.scroll-stop{
     border-radius: 15px 15px 0 0;
 }
 .header-line .bottom>li>a::after{
-    top: 20px;
-    right: 20px;
-    position: absolute;
+    margin-left: 10px;
     content: "";
     background-image: url(../img/icon/icon-down.png);
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 10px;
+    height: 5px;
     width: 10px;
 }
 .header-line .bottom li.menu-item-has-children{
@@ -228,14 +242,22 @@ body.scroll-stop{
 .menu-body-mobile{
     display: none;
 }
+.header-line.other-page-header .bottom li.menu-item-has-children{
+    width: 19%;
+}
 .header-line.other-page-header .left .top{
     display: none;
 }
 .header-line.other-page-header .left{
     margin-top: 0;
+    width: 80%;
 }
 .header-line.other-page-header .left li.contact-btn{
     display: block;
+    width: 13%;
+}
+.header-line.other-page-header .left li.contact-btn a::after{
+    display: none;
 }
 .header-line.other-page-header .left>li{
     margin-left: 30px;
@@ -287,6 +309,10 @@ body.scroll-stop{
     font-size: 20px;
     margin-top: 30px;
     display: inline-block;
+}
+.first-main .block-top .white-btn:hover{
+    background-color: #8da7d7;
+    color: #062ea9;
 }
 
 .second-main{
@@ -586,6 +612,10 @@ body.scroll-stop{
     border-radius: 10px;
     padding: 20px 55px;
     margin-top: 30px;
+    transition: .5s ease;
+}
+.five-main .block .block-form form input[type="submit"]:hover{
+    background-color: #062ea9;
 }
 /* ==============footer=============== */
 footer{
@@ -662,6 +692,7 @@ footer form input[type="submit"]{
     border: none;
     font-size: 12px;
     font-family: MMedium;
+    transition: .5s ease;
 }
 footer form .send{
     cursor: pointer;
@@ -674,6 +705,11 @@ footer form .send{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s ease;
+}
+footer form .send:hover,
+footer form .send:hover input[type="submit"]{
+    background-color: #062ea9;
 }
 footer form .send::after{
     margin-left: 5px;

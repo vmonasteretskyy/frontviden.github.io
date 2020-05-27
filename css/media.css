@@ -42,8 +42,12 @@
     .header-line.other-page-header .container-big{
         height: 100px;
     }
-    .header-line.other-page-header .bottom>li{
-        margin-left: 60px;
+    .header-line.other-page-header .bottom li.menu-item-has-children{
+        width: 21%;
+    }
+    .header-line .bottom>li>a, 
+    .header-line .bottom li>a{
+        padding: 12px 0;
     }
     .second-main .top{
         width: 65%;
@@ -92,6 +96,9 @@
     }
 }
 @media(max-width:1440.8px) {
+    .header-line.other-page-header .left li.contact-btn{
+        width: 16%;
+    }
     .first-main{
         height: 810px;
     }
@@ -151,6 +158,15 @@
     }
 }
 @media(max-width:1300.8px) {
+    .container-big{
+        margin: 0 3%;
+    }
+    .header-line.other-page-header .bottom{
+        margin-top: 0;
+    }
+    .header-line.other-page-header .bottom a{
+        font-size: 13px;
+    }
     .header-line .bottom>li,
     .header-line.other-page-header .bottom>li{
         margin-left: 20px;
@@ -272,127 +288,6 @@
     }
 }
 @media(max-width:1024.8px) {
-    .first-main {
-        height: 580px;
-    }
-    .header-line .container-big .right{
-        width: 20%;
-        z-index: 15;
-    }
-    .header-line .container-big .right a{
-        display: flex;
-    }
-    .header-line .container-big .right a img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .header-line .top li {
-        margin-left: 25px;
-    }    
-    .header-line .bottom>li>a::after{
-        right: 5px;
-    }
-    .header-line .bottom li>a{
-        padding: 12px 35px 12px 20px;
-    }
-    .header-line .bottom>li{
-        margin-left: 10px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 30px;
-    }
-    .container-big{
-        margin: 0 2%;
-    }
-    .second-main .top{
-        width: 100%;
-    }
-    .second-main{
-        padding-bottom: 0;
-    }
-    .second-main::after {
-        width: 85%;
-        height: 70%;
-    }
-    .three-main .block-items{
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .three-main .block-items .item{
-        width: 48%;
-    }
-    .three-main .block-items .item:last-child{
-        margin-top: 150px;
-    }
-    .five-main{
-        background-position: 15%;
-        padding: 50px 0;
-    }
-    .five-main .block .block-form{
-        margin-top: 20px;
-        padding: 25px 40px;
-    }
-    .five-main .block .block-form form .input-block input{
-        padding: 12px 0 12px 15px;
-    }
-    .five-main .block .block-form form input[type="submit"]{
-        padding: 12px 35px;
-    }
-    footer form input[type="email"]{
-        width: 95%;
-    }
-    footer .address{
-        margin-top: 30px;
-    }
-    /* about */
-    .about-team ul li .img{
-        height: 200px;
-    }
-    .about-top{
-        padding-top: 150px;
-    }
-    .about-team,
-    .about-topic,
-    .about-client{
-        margin-top: 100px;
-    }
-    .about-topic .text-block{
-        padding-bottom: 100px;
-    }
-    .join-team{
-        padding: 100px 0;
-    }
-    /* wp */
-    .body-wp p{
-        margin-top: 20px;
-    }
-    .body-wp h3 {
-        margin-top: 50px;
-    }
-    .body-wp>h3, 
-    .body-wp>p, 
-    .body-wp>.wp-block-image{
-        width: 100%;
-    }
-    /* blog */
-    .grid-sizer {
-        width: 50%;
-    }
-    .blog-posts .item{
-        width: 45%;
-    }
-}
-@media(max-width:768.8px) {
-    .first-main {
-        height: 430px;
-    }
-    /* .header-line{
-        margin: 10px 0;
-    } */
     .header-line.header-line.other-page-header{
         margin: 0;
     }
@@ -526,6 +421,131 @@
     .header-line li.active .sub-menu li{
         margin-top: 10px;
     }
+    /* .header-line .left {
+        width: 80%;
+    } */
+    .first-main {
+        height: 580px;
+    }
+    .header-line .container-big .right{
+        width: 20%;
+        z-index: 15;
+    }
+    .header-line .container-big .right a{
+        display: flex;
+    }
+    .header-line .container-big .right a img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .header-line .top li {
+        margin-left: 25px;
+    }    
+    .header-line .bottom>li>a::after{
+        right: 5px;
+    }
+    .header-line .bottom li>a{
+        padding: 12px 35px 12px 20px;
+    }
+    .header-line .bottom>li{
+        margin-left: 10px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .container-big{
+        margin: 0 2%;
+    }
+    .second-main .top{
+        width: 100%;
+    }
+    .second-main{
+        padding-bottom: 0;
+    }
+    .second-main::after {
+        width: 85%;
+        height: 70%;
+    }
+    .three-main .block-items{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .three-main .block-items .item{
+        width: 48%;
+    }
+    .three-main .block-items .item:last-child{
+        margin-top: 150px;
+    }
+    .five-main{
+        background-position: 15%;
+        padding: 50px 0;
+    }
+    .five-main .block .block-form{
+        margin-top: 20px;
+        padding: 25px 40px;
+    }
+    .five-main .block .block-form form .input-block input{
+        padding: 12px 0 12px 15px;
+    }
+    .five-main .block .block-form form input[type="submit"]{
+        padding: 12px 35px;
+    }
+    footer form input[type="email"]{
+        width: 95%;
+    }
+    footer .address{
+        margin-top: 30px;
+    }
+    /* about */
+    .about-team ul li .img{
+        height: 200px;
+    }
+    .about-top{
+        padding-top: 150px;
+    }
+    .about-team,
+    .about-topic,
+    .about-client{
+        margin-top: 100px;
+    }
+    .about-topic .text-block{
+        padding-bottom: 100px;
+    }
+    .join-team{
+        padding: 100px 0;
+    }
+    /* wp */
+    .body-wp p{
+        margin-top: 20px;
+    }
+    .body-wp h3 {
+        margin-top: 50px;
+    }
+    .body-wp>h3, 
+    .body-wp>p, 
+    .body-wp>.wp-block-image{
+        width: 100%;
+    }
+    /* blog */
+    .grid-sizer {
+        width: 50%;
+    }
+    .blog-posts .item{
+        width: 45%;
+    }
+}
+@media(max-width:768.8px) {
+    .first-main {
+        height: 430px;
+    }
+    /* .header-line{
+        margin: 10px 0;
+    } */
+    
 
     .container{
         margin: 0 5%;
