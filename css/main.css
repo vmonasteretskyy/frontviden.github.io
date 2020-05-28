@@ -172,7 +172,7 @@ body.scroll-stop{
 .header-line .bottom a{
     font-size: 15px;
     font-family: MRegular;
-    color: #000000;
+    color: #5C5C5C;
 }
 .header-line .bottom>li>a,
 .header-line .bottom li>a{
@@ -377,9 +377,11 @@ body.scroll-stop{
 }
 .second-main .bottom ul li.title{
     font-family: MSemiBold;
+    color: #373737;
 }
 .second-main .bottom ul li{
     margin-bottom: 15px;
+    color: #5C5C5C;
 }
 
 .three-main{
