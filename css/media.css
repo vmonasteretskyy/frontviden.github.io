@@ -119,6 +119,9 @@
     .three-main .block-items .item .text a{
         font-size: 12px;
     }
+    .three-main .block-items .item .text a::after{
+        margin-left: 10px;
+    }
     .four-main{
         padding-top: 215px;
         padding-bottom: 230px;
@@ -145,6 +148,11 @@
     }
     .case-posts .item{
         padding: 29px 32px;
+    }
+    .case-posts .item a::after{
+        margin-left: 10px;
+        height: 6px;
+        width: 10px;
     }
     .five-main{
         padding: 120px 0;
@@ -301,12 +309,59 @@
     .join-team .img img{
         width: 120%;
     }
+    /* case */
+    .case-body-main::before{
+        bottom: 5%;
+        width: 40%;
+        height: 40%;
+    }
+    .case-body-main::after{
+        width: 40%;
+        height: 40%;
+    }
+    .case-body-main{
+        padding: 300px 0 200px;
+    }
+    .case-body-main .subtitle{
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    .case-body-main .nav-blocks{
+        margin-top: 100px;
+        justify-content: space-evenly;
+    }
+    .case-body-main .nav-blocks li a{
+        font-size: 10px;
+        padding: 10px 25px;
+    }
+    .case-body-main .case-posts{
+        margin-top: 70px;
+    }
+    .case-body-main .case-posts .item{
+        margin-bottom: 35px;
+    }
     /* case-open */
     .open-case .top{
-        padding-top: 300px;
+        padding-top: 250px;
+    }
+    .open-case .top h3{
+        font-size: 28px;
+        width: 65%;
     }
     .open-case::after{
         height: 40%;
+    }
+    .open-case .top .tags li a{
+        font-size: 14px;
+    }
+    .body-wp h3{
+        margin-top: 100px;
+        font-size: 28px;
+    }
+    .body-wp p{
+        font-size: 12px;
+        line-height: 30px;
+        margin-top: 20px;
     }
     /* blog */
     .blog-posts .item{
@@ -365,13 +420,8 @@
     .case-body-main {
         padding: 250px 0 200px;
     }
-    /* wp */
-    .body-wp h3{
-        margin-top: 100px;
-    }
     /* blog */
     .blog-posts .item{
-        /* margin-bottom: 60px; */
         width: 30%;
     }
 }
