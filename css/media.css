@@ -28,6 +28,9 @@
     .header-line .container-big .right a img{
         width: 75%;
     }
+    .header-line .bottom{
+        margin-top: 10px;
+    }
     .header-line .top a,
     .header-line .bottom a{
         font-size: 12px;
