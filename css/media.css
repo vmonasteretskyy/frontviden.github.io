@@ -1185,9 +1185,11 @@
         margin-top: 60px;
     }
     .about-topic {
-        background-position-x: 50%;
+        background-image: url(../img/mission_bg2.png);
+        background-position-x: 44%;
     }
     .about-topic .text-block{
+        padding: 90px 0;
         width: 90%;
     }
     .about-topic .text-block p,
