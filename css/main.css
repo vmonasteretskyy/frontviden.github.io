@@ -961,6 +961,7 @@ footer .contact-info{
     color: #124dd9;
 }
 .about-client ul.indicators li .desc{
+    width: 80%;
     font-size: 15px;
     color: #373737;
     font-family: MRegular;

@@ -980,6 +980,9 @@
         width: 45%;
         margin-bottom: 40px;
     }
+    .about-client ul.indicators li .desc{
+        width: 40%;
+    }
     .join-team .container{
         flex-wrap: wrap;
     }
@@ -1263,7 +1266,7 @@
         font-size: 30px;
     }
     .about-client ul.indicators li .desc{
-        width: 80%;
+        width: 60%;
         font-size: 10px;
         line-height: 14px;
     }
@@ -1424,6 +1427,11 @@
     .blog-posts .item{
         margin: 0;
         margin-bottom: 50px;
+    }
+}
+@media(max-width:425.8px) {
+    .about-client ul.indicators li .desc{
+        width: 70%;
     }
 }
 @media(max-width:375.8px) {
