@@ -114,11 +114,13 @@ body.scroll-stop{
     position: fixed;
     width: 100%;
     z-index: 999;
+    transition: .5s ease;
 }
 .header-line .left{
     margin-top: 20px;
 }
 .header-line .container-big{
+    transition: .5s ease;
     height: 130px;
     align-items: center;
     display: flex;
@@ -130,10 +132,16 @@ body.scroll-stop{
 .header-line.other-page-header .container-big{
     height: 93px;
 }
+.header-line .container-big .right a img{
+    transition: .5s ease;
+    width: 100%;
+}
 .header-line.other-page-header .container-big .right a img{
     width: 75%;
+    transition: .5s ease;
 }
 .header-line .top{
+    transition: .5s ease;
     display: flex;
     justify-content: flex-end;
 }
@@ -158,6 +166,7 @@ body.scroll-stop{
     background-color: #124dd9;
     color: #ffffff;
     padding: 9px 24px;
+    border-radius: 0;
     box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
 }
 .header-line .top li.contact-btn a:hover,
@@ -272,7 +281,7 @@ body.scroll-stop{
 }
 .header-line.other-page-header .left li.contact-btn{
     display: block;
-    width: 13%;
+    width: 11%;
 }
 .header-line.other-page-header .left li.contact-btn a::after{
     display: none;
