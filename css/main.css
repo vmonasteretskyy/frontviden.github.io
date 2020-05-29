@@ -281,7 +281,7 @@ body.scroll-stop{
 }
 .header-line.other-page-header .left li.contact-btn{
     display: block;
-    width: 11%;
+    width: 12%;
 }
 .header-line.other-page-header .left li.contact-btn a::after{
     display: none;

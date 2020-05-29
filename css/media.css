@@ -78,7 +78,10 @@
         object-fit: scale-down;
     }
     .header-line.other-page-header .container-big{
-        height: 100px;
+        height: 72px;
+    }
+    .header-line.other-page-header .container-big .right a img{
+        width: 60%;
     }
     .header-line.other-page-header .bottom li.menu-item-has-children{
         width: 21%;
