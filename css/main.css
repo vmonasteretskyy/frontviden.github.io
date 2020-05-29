@@ -115,6 +115,11 @@ body.scroll-stop{
     width: 100%;
     z-index: 999;
     transition: .5s ease;
+    box-shadow: 0px 23px 39.13px 3.87px rgba(124, 124, 124, 0.32);
+}
+.header-line.other-page-header{
+    transition: .5s ease;
+    box-shadow: 0px 23px 46.41px 4.59px rgba(124, 124, 124, 0.06);
 }
 .header-line .left{
     margin-top: 20px;
