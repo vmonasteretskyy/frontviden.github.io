@@ -280,7 +280,9 @@ body.scroll-stop{
     width: 80%;
 }
 .header-line.other-page-header .left li.contact-btn{
-    display: block;
+
+    display: flex;
+    align-items: center;
     width: 12%;
 }
 .header-line.other-page-header .left li.contact-btn a::after{
