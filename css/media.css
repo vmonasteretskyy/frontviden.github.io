@@ -57,6 +57,9 @@
         /* object-fit: cover; */
         /* height: 100%; */
     }
+    .second-main::after{
+        bottom: -20%;
+    }
     .second-main .top{
         padding-top: 137px;
     }

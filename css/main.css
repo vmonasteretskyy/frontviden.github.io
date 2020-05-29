@@ -802,7 +802,7 @@ footer .contact-info{
 }
 .about-top{
     position: relative;
-    padding-top: 350px;
+    padding-top: 400px;
 }
 .about-top::before{
     content: "";
@@ -837,10 +837,16 @@ footer .contact-info{
     justify-content: center;
 }
 .about-top ul li{
+    height: 70px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     width: 48%;
+}
+.about-top ul li img{
+    width: auto;
+    height: 100%;
+    object-fit: scale-down;
 }
 .about-team{
     margin-top: 150px;
@@ -863,7 +869,7 @@ footer .contact-info{
 }
 .about-team ul li .img{
     width: 100%;
-    height: 280px;
+    height: 230px;
 }
 .about-team ul li .img img{
     object-fit: cover;
@@ -887,6 +893,7 @@ footer .contact-info{
     margin-top: 150px;
     background-image: url(../img/mission_bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .about-topic .text-block{
     padding-top: 180px;
