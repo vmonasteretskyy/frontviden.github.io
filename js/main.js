@@ -9,7 +9,6 @@ window.onscroll = function() {
     }
 }
 
-
 // Menu show more ------------------------------------
 let moreMenuBtn = document.querySelectorAll('.header-line .menu-item-has-children');
 
@@ -52,6 +51,7 @@ if(caseClose != undefined){
 }
 
 var elem = document.querySelector('.grid');
+
 var msnry = new Masonry( elem, {
   itemSelector: '.item',
   columnWidth: '.grid-sizer',
