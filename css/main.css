@@ -124,6 +124,15 @@ body.scroll-stop{
     display: flex;
     justify-content: space-between;
 }
+.header-line .container-big .right a{
+    display: flex;
+}
+.header-line.other-page-header .container-big{
+    height: 93px;
+}
+.header-line.other-page-header .container-big .right a img{
+    width: 75%;
+}
 .header-line .top{
     display: flex;
     justify-content: flex-end;
@@ -277,7 +286,7 @@ body.scroll-stop{
     color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 1130px;
     position: relative;
 }
 .first-main .video-bg {
@@ -290,9 +299,10 @@ body.scroll-stop{
     overflow: hidden;
 }
 .first-main .video-bg video{
+    padding-top: 50px;
     width: 100%;
     position: absolute;
-    top: -10%;
+    /* top: -10%; */
 }
 .align-center{
     display: flex;
@@ -577,23 +587,24 @@ body.scroll-stop{
     justify-content: flex-end;
 }
 .five-main .block{
-    width: 60%;
+    width: 53%;
+    margin-right: 5%;
 }
 .five-main .block h3{
     color: #ffffff;
 }
 .five-main .block .subtitle{
-    margin-top: 30px;
+    margin-top: 10px;
     color: #ffffff;
 }
 .five-main .block .block-form{
     margin-top: 50px;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 50px 40px 40px;
+    padding: 45px 40px 40px;
 }
 .five-main .block .block-form form{
-    margin-top: 35px;
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -615,7 +626,7 @@ body.scroll-stop{
     color: #124dd9;
 }
 .five-main .block .block-form form .input-block.name-input{
-    width: 29%;
+    width: 33%;
 }
 .five-main .block .block-form form .input-block.email-input{
     width: 60%;
@@ -641,6 +652,7 @@ footer{
     background-color: #fafafa;
 }
 footer .container-big{
+    margin: 0 13%;
     padding-top: 130px;
     padding-bottom: 100px;
     display: flex;
@@ -698,6 +710,7 @@ footer form{
     margin-top: 20px;
 }
 footer form input[type="email"]{
+    box-sizing: border-box;
     width: 100%;
     font-family: MRegular;
     font-size: 12px;
