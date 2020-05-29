@@ -148,7 +148,7 @@ body.scroll-stop{
 .header-line .bottom li.contact-btn a{
     background-color: #124dd9;
     color: #ffffff;
-    padding: 12px 24px;
+    padding: 9px 24px;
     box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
 }
 .header-line .top li.contact-btn a:hover,
@@ -309,11 +309,11 @@ body.scroll-stop{
     margin-top: 40px;
 }
 .first-main .block-top .white-btn{
-    color: #124dd9;
+    color: #062ea9;
     background-color: #ffffff;
-    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 11.83px 1.17px rgba(0, 0, 0, 0.32);
     border-radius: 10px;
-    padding: 13px 34px;
+    padding: 11.5px 35px;
     font-family: MMedium;
     font-size: 20px;
     margin-top: 30px;
@@ -336,7 +336,7 @@ body.scroll-stop{
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 89%;
+    height: 92.5%;
     right: 0%;
     bottom: -20%;
     z-index: 0;
@@ -348,13 +348,13 @@ body.scroll-stop{
     z-index: 1;
 }
 .second-main .top .text{
-    margin-top: 75px;
+    margin-top: 49px;
     font-size: 15px;
     font-family: MRegular;
     line-height: 36px;
 }
 .second-main .top ul{
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -383,7 +383,7 @@ body.scroll-stop{
 }
 .second-main .bottom h4{
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 67px;
 }
 .second-main .bottom ul{
     font-family: MRegular;
@@ -391,6 +391,7 @@ body.scroll-stop{
     width: 50%;
 }
 .second-main .bottom ul li.title{
+    font-size: 17px;
     font-family: MSemiBold;
     color: #373737;
 }
@@ -576,7 +577,7 @@ body.scroll-stop{
     justify-content: flex-end;
 }
 .five-main .block{
-    width: 70%;
+    width: 60%;
 }
 .five-main .block h3{
     color: #ffffff;
@@ -606,14 +607,14 @@ body.scroll-stop{
     background-color: #ebebeb;
     border: none;
     border-radius: 10px;
-    padding: 17px 10px 17px 15px;
+    padding: 6px 10px 6px 15px;
     width: 93%;
     font-size: 18px;
     line-height: 30px;
     color: #124dd9;
 }
 .five-main .block .block-form form .input-block.name-input{
-    width: 35%;
+    width: 30%;
 }
 .five-main .block .block-form form .input-block.email-input{
     width: 60%;
@@ -622,12 +623,12 @@ body.scroll-stop{
     cursor: pointer;
     color: #ffffff;
     background-color: #124dd9;
-    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 11.83px 1.17px rgba(11, 53, 152, 0.32);
     border: none;
     font-family: MSemiBold;
     font-size: 15px;
     border-radius: 10px;
-    padding: 20px 55px;
+    padding: 14.5px 38px;
     margin-top: 30px;
     transition: .5s ease;
 }
@@ -713,9 +714,9 @@ footer form input[type="submit"]{
 }
 footer form .send{
     cursor: pointer;
-    height: 30px;
+    height: 33px;
     border-radius: 10px;
-    width: 80px;
+    width: 93px;
     margin-top: 20px;
     position: relative;
     background-color: #124dd9;
