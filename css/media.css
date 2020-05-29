@@ -198,6 +198,9 @@
         padding: 10px 30px;
         font-size: 12px;
     }
+    footer .container-big .first-col img{
+        width: 100%;
+    }
     footer form input[type="email"]{
         width: 90%;
     }
