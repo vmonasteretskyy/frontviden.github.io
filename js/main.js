@@ -1,9 +1,8 @@
 // Scroll menu --------------------------------------
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    // document.getElementById('menu-line').classList.add = scrolled == 0 ? "" : "other-page-header";
 
-    if(scrolled == 0){
+    if(scrolled <= 300){
         document.getElementById('menu-line').classList.remove("other-page-header");
     }else{
         document.getElementById('menu-line').classList.add("other-page-header");
