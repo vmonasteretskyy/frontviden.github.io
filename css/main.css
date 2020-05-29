@@ -795,6 +795,17 @@ footer .contact-info{
 .bottom-footer p span{
     margin: 0 30px;
 }
+.footer-line{
+    display: flex;
+    justify-content: center;
+}
+.footer-line::before{
+    content: "";
+    display: block;
+    background-color: #E7E7E7;
+    width: 86%;
+    height: 1px;
+}
 
 /* ========== about ============= */
 .gray-bg{

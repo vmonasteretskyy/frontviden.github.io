@@ -593,7 +593,7 @@
         height: 80px;
     }
     .header-line .container-big{
-        height: auto;
+        height: 50px;
     }
     .header-line .left-mobile{
         display: flex;
@@ -1016,6 +1016,16 @@
     }
 }
 @media(max-width:500.8px) {
+    .header-line,
+    .header-line.other-page-header{
+        box-shadow: 0px 8px 8px rgba(94, 94, 94, 0.11);
+    }
+    .header-line.other-page-header .container-big .right a img{
+        width: 100%;
+    }
+    .header-line.other-page-header .container-big{
+        height: 50px;
+    }
     .blue-btn{
         font-size: 12px;
     }
@@ -1058,7 +1068,11 @@
     .menu-body-mobile .nav-mobile {
         width: 50%;
     }
+    .first-main .block-top h2{
+        line-height: 34px;
+    }
     .first-main .block-top .subtitle{
+        margin-top: 25px;
         width: 80%;
         font-size: 12px;
     }
@@ -1099,7 +1113,7 @@
     }
     .second-main::after{
         /* background-image: url(../img/About_Banner2.png); */
-        height: 35%;
+        height: 45%;
         width: 150%;
     }
     .second-main .top ul li img{
@@ -1161,6 +1175,9 @@
         width: 100%;
         text-align: left;
     }
+    .five-main .block{
+        margin-right: 0;
+    }
     footer .mob-col ul li img{
         width: auto;
         height: 70%;
@@ -1168,13 +1185,22 @@
     footer .contact-info ul{
         width: 45%;
     }
+    footer .container-big{
+        padding-top: 50px;
+    }
     /* about */
     .about-top::before{
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/Romb_mob_about.png);
+        top: -14%;
+        left: -39%;
     }
     .about-top{
-        padding-top: 100px;
+        padding-top: 180px;
+    }
+    .about-topic .text-block h4{
+        font-size: 24px;
     }
     .about-top .text{
         width: 100%;
@@ -1226,12 +1252,15 @@
     .about-client ul.indicators li{
         height: 60px;
     }
+    .join-team .text{
+        margin-top: 25px;
+    }
     .join-team .text h3{
         text-align: left;
     }
     .join-team::after{
         width: 60%;
-        height: 120%;
+        height: 134%;
     }
     .blue-btn{
         font-size: 12px;
@@ -1374,5 +1403,10 @@
     .blog-posts .item{
         margin: 0;
         margin-bottom: 50px;
+    }
+}
+@media(max-width:375.8px) {
+    .second-main::after{
+        height: 35%;
     }
 }
