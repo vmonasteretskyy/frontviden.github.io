@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    $(function () {
+        $('#select-style').styler();
+    });
+});
+
 // Scroll menu --------------------------------------
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -15,6 +21,15 @@ let moreMenuBtn = document.querySelectorAll('.header-line .menu-item-has-childre
 for(let i = 0; i < moreMenuBtn.length; i++){
     moreMenuBtn[i].addEventListener('click', (e)=> {
         moreMenuBtn[i].classList.toggle('active');
+    });
+}
+
+// Show more ----
+let moreBlogMenuBtn = document.querySelectorAll('.mobile-menu .menu-item-has-children');
+
+for(let i = 0; i < moreBlogMenuBtn.length; i++){
+    moreBlogMenuBtn[i].addEventListener('click', (e)=> {
+        moreBlogMenuBtn[i].classList.toggle('active');
     });
 }
 
@@ -50,6 +65,7 @@ if(caseClose != undefined){
     });
 }
 
+// Masonry -----------------------------------------------
 var elem = document.querySelector('.grid');
 
 var msnry = new Masonry( elem, {
