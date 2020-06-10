@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $(function () {
-        $('#select-style').styler();
+        if($('#select-style')){
+            $('#select-style').styler();
+        }
     });
 });
 
@@ -73,3 +75,11 @@ var msnry = new Masonry( elem, {
   columnWidth: '.grid-sizer',
 //   gutter: 40
 });
+
+// var elem = document.querySelector('.hirinig .blocks');
+
+// var msnry = new Masonry( elem, {
+//   itemSelector: '.item',
+//   columnWidth: 30,
+//   gutter: 10
+// });

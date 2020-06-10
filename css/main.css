@@ -2182,3 +2182,222 @@ footer .contact-info{
 .digital-main .four-main .container-left{
     z-index: 1;
 }
+/* =============== Hirinig ================ */
+.hirinig{
+    position: relative;
+}
+.hirinig::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../img/hirinig.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+}
+.hirinig .top{
+    position: relative;
+    padding-top: 450px;
+}
+.hirinig .top .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hirinig .top .title h3{
+    line-height: 50px;
+    width: 60%;
+    text-align: center;
+}
+.hirinig .top p{
+    width: 65%;
+    margin-top: 180px;
+    font-size: 20px;
+    color: #124dd9;
+    line-height: 36px;
+    font-family: MBold;
+}
+.hirinig .top .blocks{
+    display: grid;
+    margin: 0 5%;
+    margin-top: 80px;
+    grid-template-areas: "left-top left-top right-position"  
+                         "left-bottom left-bottom right-position"; 
+}
+.hirinig .top .blocks-mobile{
+    display: none;
+}
+.hirinig .top .blocks .left-top{
+    width: 100%;
+    grid-area: left-top;
+    display: grid;
+    grid-template-areas: "bl-1 bl-2 bl-2"  
+                         "bl-1 bl-4 bl-5"; 
+}
+.hirinig .top .blocks .left-bottom{
+    width: 100%;
+    grid-area: left-bottom;
+    display: grid;
+    grid-template-areas: "bl-7 bl-7 bl-8"  
+                         "bl-10 bl-10 bl-8"; 
+}
+.hirinig .top .blocks .right{
+    width: 100%;
+    display: grid;
+    grid-area: right-position;
+    grid-template-areas: "bl-3"  
+                         "bl-6"
+                         "bl-9"; 
+}
+.hirinig .top .blocks .item{
+    margin: 7px;
+    background-color: #f2f2f2;
+}
+.hirinig .top .blocks .item.bl-1{
+    height: 470px;
+    grid-area: bl-1;
+}
+.hirinig .top .blocks .item.bl-2{
+    height: 236px;
+    grid-area: bl-2;
+}
+.hirinig .top .blocks .item.bl-3{
+    height: 325px;
+    grid-area: bl-3;
+}
+.hirinig .top .blocks .item.bl-4{
+    height: 217px;
+    grid-area: bl-4;
+}
+.hirinig .top .blocks .item.bl-5{
+    height: 217px;
+    grid-area: bl-5;
+}
+.hirinig .top .blocks .item.bl-6{
+    height: 325px;
+    grid-area: bl-6;
+}
+.hirinig .top .blocks .item.bl-7{
+    height: 286px;
+    grid-area: bl-7;
+}
+.hirinig .top .blocks .item.bl-8{
+    height: 453px;
+    grid-area: bl-8;
+}
+.hirinig .top .blocks .item.bl-9{
+    height: 258px;
+    grid-area: bl-9;
+}
+.hirinig .top .blocks .item.bl-10{
+    height: 154px;
+    grid-area: bl-10;
+}
+.hirinig .bottom{
+    position: relative;
+}
+.hirinig .bottom .text{
+    padding-top: 300px;
+    padding-bottom: 800px;
+}
+.hirinig .bottom::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/404_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.hirinig .bottom .text h3{
+    width: 68%;
+    line-height: 50px;
+}
+.hirinig .bottom .text p{
+    margin-top: 60px;
+    width: 40%;
+    font-family: MMedium;
+    line-height: 36px;
+    font-size: 17px;
+}
+.hirinig .bottom .text a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 30px;
+}
+
+.hirinig.hirinig-v2 .bottom::after{
+    transform: rotate(180deg);
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 0;
+    background-image: url(../img/romb1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+}
+.hirinig.hirinig-v2 .bottom .text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 300px;
+}
+.hirinig.hirinig-v2 .bottom .text a{
+    padding: 0;
+    margin-top: 0;
+}
+.hirinig.hirinig-v2 .bottom .text h3{
+    width: 100%;
+    margin-bottom: 80px;
+}
+.hirinig.hirinig-v2 .bottom .text li.title{
+    font-size: 25px;
+    color: #124dd9;
+    font-family: MBold;
+    margin-bottom: 50px;
+}
+.hirinig.hirinig-v2 .bottom .text li{
+    margin-bottom: 20px;
+}
+.hirinig.hirinig-v2 .bottom .text li a{
+    font-size: 17px;
+    font-family: MRegular;
+    color: #373737;
+}
+.hirinig.hirinig-v2 .bottom .text li a:hover{
+    color: #124dd9;
+    padding: 0;
+    text-decoration: underline;
+    font-family: MSemiBold;
+}
+.hirinig.hirinig-v2 .bottom .text-two{
+    padding-bottom: 300px;
+}
+.hirinig.hirinig-v2 .bottom .text-two h3{
+    width: 68%;
+    font-size: 30px;
+}
+.hirinig.hirinig-v2 .bottom .text-two p{
+    margin-top: 50px;
+    width: 40%;
+    font-family: MMedium;
+    line-height: 36px;
+    font-size: 17px;
+}
+.hirinig.hirinig-v2 .bottom .text-two a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 30px;
+}

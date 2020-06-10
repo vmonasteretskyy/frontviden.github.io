@@ -600,6 +600,90 @@
     .digital-main::after{
         height: 30%;
     }
+    /* hirinig */
+    .hirinig .top{
+        padding-top: 300px;
+    }
+    .hirinig .top .title h3{
+        line-height: 36px;
+    }
+    .hirinig::after{
+        height: 25%;
+    }
+    .hirinig .top p{
+        margin-top: 140px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .hirinig .top .blocks{
+        margin: 60px 3% 0;
+    }
+    .hirinig .top .blocks .item.bl-1{
+        height: 400px;
+    }
+    .hirinig .top .blocks .item.bl-2{
+        height: 200px;
+    }
+    .hirinig .top .blocks .item.bl-4,
+    .hirinig .top .blocks .item.bl-5{
+        height: 180px;
+    }
+    .hirinig .top .blocks .item.bl-3,
+    .hirinig .top .blocks .item.bl-6{
+        height: 280px;
+    }
+    .hirinig .top .blocks .item.bl-9{
+        height: 210px;
+    }
+    .hirinig .top .blocks .item.bl-7{
+        height: 230px;
+    }
+    .hirinig .top .blocks .item.bl-8{
+        height: 400px;
+    }
+    .hirinig .bottom .text{
+        padding-top: 200px;
+        padding-bottom: 600px;
+    }
+    .hirinig .bottom .text h3{
+        line-height: 36px;
+    }
+    .hirinig .bottom .text p{
+        margin-top: 40px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .hirinig .bottom .text a,
+    .hirinig.hirinig-v2 .bottom .text-two a{
+        font-size: 12px;
+        padding: 10px 24px;
+    }
+
+    .hirinig.hirinig-v2 .bottom .text,
+    .hirinig.hirinig-v2 .bottom .text-two{
+        padding-bottom: 150px;
+    }
+    .hirinig.hirinig-v2 .bottom .text h3{
+        margin-bottom: 60px;
+    }
+    .hirinig.hirinig-v2 .bottom .text-two h3{
+        font-size: 24px;
+    }
+    .hirinig.hirinig-v2 .bottom .text-two p{
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .hirinig.hirinig-v2 .bottom .text li.title{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .hirinig.hirinig-v2 .bottom .text li a{
+        font-size: 12px;
+    }
+    .hirinig.hirinig-v2 .bottom .text li{
+        margin-bottom: 10px;
+    }
+
 }
 @media(max-width:1440.8px) {
     .header-line.other-page-header .left li.contact-btn{
@@ -716,6 +800,10 @@
     /* blog */
     .blog-posts .item{
         width: 30%;
+    }
+    /* hirinig */
+    .hirinig .top .blocks{
+        margin: 60px 0 0;
     }
 }
 @media(max-width:1150.8px) {
@@ -1122,6 +1210,13 @@
     .category-items {
         padding-top: 200px;
     }
+    /* hirinig */
+    .hirinig .top {
+        padding-top: 150px;
+    }
+    .hirinig::after {
+        height: 20%;
+    }
 }
 @media(max-width:768.8px) {
     .first-main {
@@ -1331,6 +1426,14 @@
     .analityc-open::after{
         height: 58%;
         width: 75%;
+    }
+    /* hirinig */
+    .hirinig .top p{
+        margin-top: 100px;
+    }
+    .hirinig .bottom .text {
+        padding-top: 100px;
+        padding-bottom: 300px;
     }
 }
 @media(max-width:500.8px) {
@@ -2177,6 +2280,157 @@
         top: 13%;
         right: -5.5%;
         z-index: 1;
+    }
+    /* hirinig */
+    .hirinig .top .title h3{
+        width: 85%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .hirinig .top p{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .hirinig .top .blocks{
+        display: none;
+    }
+    .hirinig .top .blocks-mobile{
+        margin-top: 40px;
+        display: block;
+    }
+    .hirinig .top .blocks-mobile .item{
+        margin: 7px;
+        background-color: #f2f2f2;
+    }
+    .hirinig .top .blocks-mobile .pack-one{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "bm-1 bm-2"  
+                             "bm-1 bm-3"
+                             "bm-4 bm-4"; 
+    }
+    .hirinig .top .blocks-mobile .pack-two{
+        display: grid;
+        width: 100%;
+        grid-template-areas: "bm-5 bm-6 bm-6"  
+                             "bm-5 bm-7 bm-7"
+                             "bm-8 bm-7 bm-7"
+                             "bm-9 bm-9 bm-9"; 
+    }
+    
+    .hirinig .top .blocks-mobile .item.bm-1{
+        height: 301px;
+        grid-area: bm-1;
+    }
+    .hirinig .top .blocks-mobile .item.bm-2{
+        height: 150px;
+        grid-area: bm-2;
+    }
+    .hirinig .top .blocks-mobile .item.bm-3{
+        height: 141px;
+        grid-area: bm-3;
+    }
+    .hirinig .top .blocks-mobile .item.bm-4{
+        height: 145px;
+        grid-area: bm-4;
+    }
+    .hirinig .top .blocks-mobile .item.bm-5{
+        height: 213px;
+        grid-area: bm-5;
+    }
+    .hirinig .top .blocks-mobile .item.bm-6{
+        height: 113px;
+        grid-area: bm-6;
+    }
+    .hirinig .top .blocks-mobile .item.bm-7{
+        height: 194px;
+        grid-area: bm-7;
+    }
+    .hirinig .top .blocks-mobile .item.bm-8{
+        height: 95px;
+        grid-area: bm-8;
+    }
+    .hirinig .top .blocks-mobile .item.bm-9{
+        height: 180px;
+        grid-area: bm-9;
+    }
+    .hirinig.hirinig-v2 .bottom::after{
+        bottom: -22%;
+    }
+    .hirinig .bottom .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+        padding-bottom: 270px;
+    }
+    .hirinig .bottom .text h3,
+    .hirinig.hirinig-v2 .bottom .text-two h3{
+        width: 100%;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .hirinig .bottom .text p,
+    .hirinig.hirinig-v2 .bottom .text-two p{
+        text-align: center;
+        width: 90%;
+        line-height: 20px;
+    }
+    .hirinig .bottom .text a,
+    .hirinig.hirinig-v2 .bottom .text-two a{
+        padding: 7px 24px;
+    }
+    .hirinig .bottom::after{
+        height: 65%;
+    }
+    .hirinig::after{
+        height: 14%;
+    }
+    .hirinig.hirinig-v2 .bottom .text{
+        padding-bottom: 0;
+    }
+    .hirinig.hirinig-v2 .bottom .text-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 90px;
+        padding-bottom: 130px;
+    }
+    .hirinig.hirinig-v2 .bottom .text{
+        text-align: left;
+    }
+    .hirinig.hirinig-v2 .bottom .text h3{
+        text-align: left;
+    }
+    .hirinig.hirinig-v2 .bottom .text ul{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .hirinig.hirinig-v2 .bottom .text h3{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .hirinig.hirinig-v2 .bottom .text li.title{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .hirinig.hirinig-v2 .bottom .text li a{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .hirinig.hirinig-v2 .bottom .text li a::after{
+        margin-left: 25px;
+        content: "";
+        background-image: url(../img/icon/Arrow.png);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 8px;
+        width: 12px;
+        transition: .5s ease;
     }
 }
 @media(max-width:425.8px) {
