@@ -135,7 +135,7 @@ body.scroll-stop{
     display: flex;
 }
 .header-line.other-page-header .container-big{
-    height: 93px;
+    height: 85px;
 }
 .header-line .container-big .right a img{
     transition: .5s ease;
@@ -1166,7 +1166,7 @@ footer .contact-info{
 .body-wp>h3,
 .body-wp>p,
 .body-wp>.wp-block-image{
-    width: 80%;
+    width: 72%;
 }
 .body-wp h3{
     margin-top: 150px;
@@ -1331,6 +1331,16 @@ footer .contact-info{
 .blog-posts .item .text-block{
     padding: 40px;
 }
+.others-posts .blog-posts .item .text-block{
+    padding: 40px;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.others-posts .blog-posts .item{
+    height: 370px;
+}
 .blog-posts .item h4{
     font-size: 20px;
 }
@@ -1466,11 +1476,12 @@ footer .contact-info{
 .blog-open .top .tags{
     width: 100%;
     margin-top: 50px;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
 .blog-open .top .tags li{
-    margin: 0 10px;
+    margin: 10px 10px 0;
 }
 .blog-open .top .tags li a{
     font-family: MMedium;
@@ -1543,9 +1554,9 @@ footer .contact-info{
     margin-top: 120px;
     text-align: left;
 }
-.body-wp>p{
+/* .body-wp>p{
     width: 100%;
-}
+} */
 .pr-policy .body-wp h3:first-child{
     margin-top: 150px;
 }
@@ -1588,14 +1599,14 @@ footer .contact-info{
 .contact-page::after{
     content: "";
     position: absolute;
-    top: 5%;
+    top: 0;
     right: 0;
     background-image: url(../img/contact_bg_top.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
     width: 100%;
-    height: 45%;
+    height: 37%;
     z-index: -1;
 }
 .contact-page::before{

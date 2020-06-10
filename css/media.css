@@ -438,6 +438,9 @@
     .blog-open .top .tags li a{
         font-size: 14px;
     }
+    .others-posts .blog-posts .item{
+        height: 300px;
+    }
     /* policy */
     .pr-policy{
         padding: 300px 0 150px;
@@ -801,6 +804,13 @@
     .blog-posts .item{
         width: 30%;
     }
+    /* blog-open */
+    .blog-open .top{
+        padding-top: 250px;
+    }
+    .blog-open::after{
+        height: 42%;
+    }
     /* hirinig */
     .hirinig .top .blocks{
         margin: 60px 0 0;
@@ -1019,7 +1029,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        height: auto;
+        height: 100vh;
         transition: 1s;
         transform: translateX(100%);
         padding-top: 80px;
@@ -1197,6 +1207,19 @@
     .blog-page .top .navbar-menu li{
         width: 30%;
         margin: 0 10px;
+    }
+    /* blog-open */
+    .blog-open .top{
+        padding-top: 200px;
+    }
+    .blog-open::after{
+        height: 27%;
+    }
+    .others-posts .blog-posts{
+        justify-content: space-around;
+    }
+    .others-posts .blog-posts .item:last-child{
+        margin-top: 40px;
     }
     /* contact */
     .contact-body .top{
@@ -1387,7 +1410,7 @@
         flex-wrap: wrap;
     }
     .case-body-main .nav-blocks li{
-        width: 45%;
+        width: 16%;
         margin-bottom: 40px;
     }
     .case-body-main .case-posts{
@@ -1917,6 +1940,21 @@
     }
     .btn-more-posts .blue-btn{
         padding: 10px 35px;
+    }
+    /* blog-open */
+    .blog-open::after{
+        width: 100%;
+        height: 15%;
+    }
+    .blog-open .top{
+        padding-top: 150px;
+    }
+    .blog-open .top h3{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .others-posts .blog-posts .item{
+        margin-top: 40px;
     }
     /* policy */
     .pr-policy{
