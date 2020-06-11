@@ -541,7 +541,9 @@ body.scroll-stop{
     margin-left: 10px;
     border-radius: 10px;
     transition: .5s ease;
-    /* box-shadow: 0px 15px 30px rgba(173, 173, 173, 0.1); */
+    box-shadow: 0px 15px 30px rgba(173, 173, 173, 0.1);
+}
+.case-body-main .case-posts .item{
     box-shadow: 17px 9px 65px rgba(15, 56, 123, 0.2);
 }
 .case-posts .item .text{
