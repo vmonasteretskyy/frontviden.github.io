@@ -1204,17 +1204,16 @@ footer .contact-info{
 }
 /* ========== blog ========= */
 .blog-page::before{
-    transform: rotate(180deg);
     content: "";
     position: absolute;
     bottom: 5%;
-    left: -4%;
-    background-image: url(../img/romb1.png);
+    left: 0;
+    background-image: url(../img/case_bg_n2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    width: 40%;
-    height: 40%;
+    width: 21%;
+    height: 36%;
     z-index: -1;
 }
 .blog-page::after{
@@ -1334,7 +1333,7 @@ footer .contact-info{
     background-color: #ffffff;
     border-radius: 10px;
     /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); */
-    box-shadow: 17px 9px 65px rgba(15, 56, 123, 0.3);
+    box-shadow: 17px 9px 65px rgba(15, 56, 123, 0.2);
     transition: .5s ease;
 }
 .blog-posts .item .img{
