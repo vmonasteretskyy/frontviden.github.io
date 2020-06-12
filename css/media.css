@@ -338,7 +338,7 @@
     }
     .case-body-main::after{
         width: 40%;
-        height: 40%;
+        height: 45%;
     }
     .case-body-main{
         padding: 300px 0 200px;
@@ -513,6 +513,9 @@
         font-size: 12px;
     }
     /* analityc-open */
+    .analityc-open::after{
+        height: 22%;
+    }
     .analityc-open.open-v2::after{
         top: 100px;
     }
@@ -1229,7 +1232,8 @@
     }
     /* analityc-open */
     .analityc-open::after{
-        height: 70%;
+        height: 17%;
+        top: 3%;
     }
     /* consulting-main */
     .category-items {
@@ -1447,10 +1451,6 @@
     }
     .analityc-open .analityc-body .text-block{
         width: 100%;
-    }
-    .analityc-open::after{
-        height: 58%;
-        width: 75%;
     }
     /* hirinig */
     .hirinig .top p{
@@ -2076,7 +2076,6 @@
         padding-top: 150px;
     }
     .analityc-open::after {
-        height: 72%;
         width: 144%;
     }
     .analityc-open .analityc-body .top{
