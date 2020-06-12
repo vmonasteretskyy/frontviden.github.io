@@ -1693,6 +1693,7 @@ footer .contact-info{
     width: 58%;
 }
 .contact-body .get-in form .input-block label{
+    font-family: MRegular;
     margin-bottom: 3px;
     font-size: 14px;
     color: #9e9e9e;
