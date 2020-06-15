@@ -69,12 +69,13 @@ if(caseClose != undefined){
 
 // Masonry -----------------------------------------------
 var elem = document.querySelector('.grid');
-
-var msnry = new Masonry( elem, {
-  itemSelector: '.item',
-  columnWidth: '.grid-sizer',
-//   gutter: 40
-});
+if(elem){
+    var msnry = new Masonry( elem, {
+    itemSelector: '.item',
+    columnWidth: '.grid-sizer',
+    //   gutter: 40
+    });
+}
 
 // var elem = document.querySelector('.hirinig .blocks');
 
