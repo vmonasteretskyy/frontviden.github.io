@@ -1898,9 +1898,12 @@ footer .contact-info{
     position: relative;
     border-radius: 0 10px 10px 0;
     background-color: #fefefe;
-    padding: 20px 20px 20px 50px;
+    padding: 20px 20px 30px 50px;
     margin-left: -20px;
     transition: .5s ease;
+}
+.category-items .category-block .right .item h3{
+    line-height: 36px;
 }
 .category-items .category-block .right .item h3 a{
     font-size: 20px;
