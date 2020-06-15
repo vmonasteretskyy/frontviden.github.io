@@ -1850,7 +1850,7 @@ footer .contact-info{
     align-items: center;
     background-color: #fefefe;
     /* box-shadow: 0px 15px 30px rgba(173, 173, 173, 0.1); */
-    box-shadow: 0px 21px 65px rgba(15, 56, 123, 0.1);
+    box-shadow: 0px 40px 100px 35px rgba(15, 56, 123, 0.1)
 }
 .category-items .category-block .left::after{
     position: absolute;
