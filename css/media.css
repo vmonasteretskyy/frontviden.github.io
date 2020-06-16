@@ -333,7 +333,7 @@
     /* case */
     .case-body-main::before{
         bottom: 5%;
-        width: 40%;
+        width: 20%;
         height: 40%;
     }
     .case-body-main::after{
@@ -451,7 +451,7 @@
     }
     .pr-policy::before{
         height: 35%;
-        width: 40%;
+        width: 20%;
     }
     .pr-policy .body-wp h3{
         margin-top: 90px;
@@ -476,7 +476,7 @@
         top: 2%;
     }
     .contact-page::before{
-        width: 30%;
+        width: 20%;
         height: 30%;
     }
     .contact-body .top p.subtitle{
@@ -914,7 +914,7 @@
     }
     .pr-policy::before{
         height: 30%;
-        width: 30%;
+        width: 20%;
         bottom: 15%;
     }
     .pr-policy .body-wp h3{
@@ -2522,8 +2522,11 @@
     .swiper-slide-empty{
         width: 0%;
     }
-    .slider_progress_wrap{
-        padding-top: 40px;
+    .swiper-container{
+        padding-bottom: 40px;
+    }
+    .case-posts .item:hover{
+        box-shadow: 0px 9px 30px rgba(15, 56, 123, 0.6);
     }
 }
 @media(max-width:425.8px) {

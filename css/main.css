@@ -547,10 +547,8 @@ body.scroll-stop{
     z-index: 0;
 }
 .swiper-container{
-    margin-top: 50px;
-}
-.slider_progress_wrap{
-    padding-top: 80px;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 .swiper-slide{
     margin-right: 60px;
@@ -1014,6 +1012,32 @@ footer .contact-info{
     color: #373737;
     font-family: MRegular;
 }
+/* animation */
+.about-client ul.indicators li{
+    opacity: 0;
+    transform: translateY(0%);
+}
+.about-client ul.indicators li.show1{
+    transform: translateY(-50%);
+    transition: 1s ease;
+}
+.about-client ul.indicators li.show2{
+    transform: translateY(-60%);
+    transition: 1.2s ease;
+}
+.about-client ul.indicators li.show3{
+    transform: translateY(-70%);
+    transition: 1.4s ease;
+}
+.about-client ul.indicators li.show4{
+    transform: translateY(-80%);
+    transition: 1.6s ease;
+}
+.scrollShowElement .about-client ul.indicators li{
+    transform: translateY(0%);
+    opacity: 1;
+}
+/* animation-end */
 .join-team{
     position: relative;
     padding-top: 300px;

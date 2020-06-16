@@ -28,7 +28,9 @@ window.onload = function() {
 
     var retingShowBlock = document.querySelector('.opinion-block .block');
     if(loadTopShow){
-        retingShowBlock.style.transform = "translateY(0%)";
+        if(retingShowBlock){
+            retingShowBlock.style.transform = "translateY(0%)";
+        }
     }
 
 };
@@ -43,9 +45,116 @@ window.onscroll = function() {
         document.getElementById('menu-line').classList.add("other-page-header");
     }
 
+    console.log(scrolled);
+
 // Show element when page is scroll --------------------------------------
-    if(scrolled >= 1200){
-        document.querySelector('main').classList.add("scrollShowElement");
+    var windowSize = document.documentElement.clientWidth,
+        caseMain = document.querySelector('.case-body-main'),
+        casePosts = document.querySelectorAll('.case-body-main .case-posts .item');
+
+        for(let i = 0; i < casePosts.length; i++){
+            if(i == 0 || i == 3 || i == 6){
+                casePosts[i].style.cssText = "transform: translateY(-10%); opacity: 0; ";
+            }
+            if(i == 1 || i == 4 || i == 7){
+                casePosts[i].style.cssText = "transform: translateY(-20%); opacity: 0;";
+            }
+            if(i == 2 || i == 5 || i == 8){
+                casePosts[i].style.cssText = "transform: translateY(-30%); opacity: 0;";
+            }
+        }
+
+    if(windowSize <= 1920 && windowSize > 1601){ 
+        if(caseMain && scrolled > 1){
+            document.querySelector('main').classList.add("scrollShowElement");
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 2){
+                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
+                }
+            }
+        }
+        if(caseMain && scrolled >= 200){
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 5 && i > 2){
+                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
+                }
+            }
+        }
+        if(caseMain && scrolled >= 600){
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 8 && i > 3){
+                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
+                }
+            }
+        }
+    }
+
+    if(windowSize <= 1600){ 
+        if(caseMain && scrolled >= 0){
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 2){
+                    casePosts[i].style.cssText = "transform: translateY(0%);";
+                }
+            }
+        }
+        if(caseMain && scrolled >= 50){
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 5 && i > 2){
+                    casePosts[i].style.cssText = "transform: translateY(0%);";
+                }
+            }
+        }
+        if(caseMain && scrolled >= 300){
+            for(let i = 0; i < casePosts.length; i++){
+                if(i <= 8 && i > 3){
+                    casePosts[i].style.cssText = "transform: translateY(0%);";
+                }
+            }
+        }
+    }
+    
+    var indexMain = document.querySelector('.first-main');
+
+    if(windowSize <= 1920 && windowSize > 1600){ 
+        if(indexMain && scrolled >= 2200){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 1600 && windowSize > 1300){
+        if(indexMain && scrolled >= 1800){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 1300 && windowSize >= 1150){
+        if(indexMain && scrolled >= 1400){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 1150 && windowSize > 992){
+        if(indexMain && scrolled >= 1100){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 992){
+        if(indexMain){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }
+
+    var about = document.querySelector('.about-top');
+
+    if(windowSize <= 1920 && windowSize >= 1600){
+        if(about && scrolled > 3100){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 1600 && windowSize >= 1150){
+        if(about && scrolled > 2200){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 1150 && windowSize >= 992){
+        if(about && scrolled > 1800){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
+    }else if(windowSize <= 992){
+        if(about){
+            document.querySelector('main').classList.add("scrollShowElement");
+        }
     }
 
 }
@@ -109,11 +218,3 @@ if(elem){
     //   gutter: 40
     });
 }
-
-// var elem = document.querySelector('.hirinig .blocks');
-
-// var msnry = new Masonry( elem, {
-//   itemSelector: '.item',
-//   columnWidth: 30,
-//   gutter: 10
-// });
