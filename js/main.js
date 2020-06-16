@@ -6,8 +6,35 @@ $(document).ready(function () {
     });
 });
 
-// Scroll menu --------------------------------------
+// Show element when page is laod -------------------
+window.onload = function() {
+    var topMainBlock = document.querySelector('.first-main .block-top');
+    if(topMainBlock){
+        topMainBlock.style.opacity = "1";
+    }
+
+    var styleElem = document.head.appendChild(document.createElement("style")),
+        loadTopShow = document.querySelector('.loadTopShow');
+    if(loadTopShow){
+        // styleElem.innerHTML = ".analityc-main::after { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".about-top::before { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".open-case::after { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".hirinig::after { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".blog-page::after { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".blog-open::after { transform: translateY(0%); }";
+        // styleElem.innerHTML = ".contact-page::after { transform: translateY(0%); }";
+        styleElem.innerHTML = ".analityc-open.open-v2::after{ transform: translateX(0%); } .analityc-open::after{ transform: translateX(0%); width: 20%; } digital-main::after{ transform: translateY(0%); } .consulting-main::after{ transform: translateY(0%); } .analityc-main::after { transform: translateY(0%); } .about-top::before { transform: translateY(0%); } .open-case::after { transform: translateY(0%); } .hirinig::after { transform: translateY(0%); } .blog-page::after { transform: translateY(0%); } .pr-policy::after { transform: translateY(0%); } .blog-open::after { transform: translateY(0%); } .contact-page::after { transform: translateY(0%); }";
+    }
+
+    var retingShowBlock = document.querySelector('.opinion-block .block');
+    if(loadTopShow){
+        retingShowBlock.style.transform = "translateY(0%)";
+    }
+
+};
+
 window.onscroll = function() {
+// Scroll menu --------------------------------------
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     if(scrolled <= 300){
@@ -15,6 +42,12 @@ window.onscroll = function() {
     }else{
         document.getElementById('menu-line').classList.add("other-page-header");
     }
+
+// Show element when page is scroll --------------------------------------
+    if(scrolled >= 1200){
+        document.querySelector('main').classList.add("scrollShowElement");
+    }
+
 }
 
 // Menu show more ------------------------------------
