@@ -8,24 +8,21 @@ $(document).ready(function () {
 
 // Show element when page is laod -------------------
 window.onload = function() {
+    // Top big-img
+    var styleElem = document.head.appendChild(document.createElement("style")),
+        loadTopShow = document.querySelector('.loadTopShow');
+
+    if(loadTopShow){
+        styleElem.innerHTML = ".analityc-open.open-v2::after{ transform: translateX(0%); } .analityc-open::after{ transform: translateX(0%); width: 20%; } .digital-main::after{ transform: translateY(0%); } .consulting-main::after{ transform: translateY(0%); } .analityc-main::after { transform: translateY(0%); } .about-top::before { transform: translateY(0%); } .open-case::after { transform: translateY(0%); } .hirinig::after { transform: translateY(0%); } .blog-page::after { transform: translateY(0%); } .pr-policy::after { transform: translateY(0%); } .blog-open::after { transform: translateY(0%); } .contact-page::after { transform: translateY(0%); }";
+    }
+    
+    // Reting (index-page)
     var topMainBlock = document.querySelector('.first-main .block-top');
     if(topMainBlock){
         topMainBlock.style.opacity = "1";
     }
 
-    var styleElem = document.head.appendChild(document.createElement("style")),
-        loadTopShow = document.querySelector('.loadTopShow');
-    if(loadTopShow){
-        // styleElem.innerHTML = ".analityc-main::after { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".about-top::before { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".open-case::after { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".hirinig::after { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".blog-page::after { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".blog-open::after { transform: translateY(0%); }";
-        // styleElem.innerHTML = ".contact-page::after { transform: translateY(0%); }";
-        styleElem.innerHTML = ".analityc-open.open-v2::after{ transform: translateX(0%); } .analityc-open::after{ transform: translateX(0%); width: 20%; } digital-main::after{ transform: translateY(0%); } .consulting-main::after{ transform: translateY(0%); } .analityc-main::after { transform: translateY(0%); } .about-top::before { transform: translateY(0%); } .open-case::after { transform: translateY(0%); } .hirinig::after { transform: translateY(0%); } .blog-page::after { transform: translateY(0%); } .pr-policy::after { transform: translateY(0%); } .blog-open::after { transform: translateY(0%); } .contact-page::after { transform: translateY(0%); }";
-    }
-
+    // Reting (analityc-v2-page)
     var retingShowBlock = document.querySelector('.opinion-block .block');
     if(loadTopShow){
         if(retingShowBlock){
@@ -34,6 +31,22 @@ window.onload = function() {
     }
 
 };
+
+
+// This code for scroll-animations case-item (case-main-page) ----------------------------
+var casePosts = document.querySelectorAll('.case-body-main .case-posts .item');
+
+for(let i = 0; i < casePosts.length; i++){
+    if(i == 0 || i == 3 || i == 6){
+        casePosts[i].style.cssText = "transform: translateY(-10%); opacity: 0; ";
+    }
+    if(i == 1 || i == 4 || i == 7){
+        casePosts[i].style.cssText = "transform: translateY(-20%); opacity: 0;";
+    }
+    if(i == 2 || i == 5 || i == 8){
+        casePosts[i].style.cssText = "transform: translateY(-30%); opacity: 0;";
+    }
+}
 
 window.onscroll = function() {
 // Scroll menu --------------------------------------
@@ -45,27 +58,12 @@ window.onscroll = function() {
         document.getElementById('menu-line').classList.add("other-page-header");
     }
 
-    console.log(scrolled);
-
 // Show element when page is scroll --------------------------------------
     var windowSize = document.documentElement.clientWidth,
-        caseMain = document.querySelector('.case-body-main'),
-        casePosts = document.querySelectorAll('.case-body-main .case-posts .item');
-
-        for(let i = 0; i < casePosts.length; i++){
-            if(i == 0 || i == 3 || i == 6){
-                casePosts[i].style.cssText = "transform: translateY(-10%); opacity: 0; ";
-            }
-            if(i == 1 || i == 4 || i == 7){
-                casePosts[i].style.cssText = "transform: translateY(-20%); opacity: 0;";
-            }
-            if(i == 2 || i == 5 || i == 8){
-                casePosts[i].style.cssText = "transform: translateY(-30%); opacity: 0;";
-            }
-        }
+        caseMain = document.querySelector('.case-body-main');
 
     if(windowSize <= 1920 && windowSize > 1601){ 
-        if(caseMain && scrolled > 1){
+        if(caseMain && scrolled > 0){
             document.querySelector('main').classList.add("scrollShowElement");
             for(let i = 0; i < casePosts.length; i++){
                 if(i <= 2){
@@ -74,6 +72,7 @@ window.onscroll = function() {
             }
         }
         if(caseMain && scrolled >= 200){
+            document.querySelector('main').classList.add("scrollShowElement_row2");
             for(let i = 0; i < casePosts.length; i++){
                 if(i <= 5 && i > 2){
                     casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
@@ -81,6 +80,7 @@ window.onscroll = function() {
             }
         }
         if(caseMain && scrolled >= 600){
+            document.querySelector('main').classList.add("scrollShowElement_row3");
             for(let i = 0; i < casePosts.length; i++){
                 if(i <= 8 && i > 3){
                     casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
@@ -97,14 +97,14 @@ window.onscroll = function() {
                 }
             }
         }
-        if(caseMain && scrolled >= 50){
+        if(caseMain && scrolled >= 100){
             for(let i = 0; i < casePosts.length; i++){
                 if(i <= 5 && i > 2){
                     casePosts[i].style.cssText = "transform: translateY(0%);";
                 }
             }
         }
-        if(caseMain && scrolled >= 300){
+        if(caseMain && scrolled >= 400){
             for(let i = 0; i < casePosts.length; i++){
                 if(i <= 8 && i > 3){
                     casePosts[i].style.cssText = "transform: translateY(0%);";
@@ -112,7 +112,7 @@ window.onscroll = function() {
             }
         }
     }
-    
+    // Service animation blocks (index-page) ----------
     var indexMain = document.querySelector('.first-main');
 
     if(windowSize <= 1920 && windowSize > 1600){ 
@@ -137,6 +137,7 @@ window.onscroll = function() {
         }
     }
 
+    // Indicator animation block (about-page) ------------
     var about = document.querySelector('.about-top');
 
     if(windowSize <= 1920 && windowSize >= 1600){

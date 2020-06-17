@@ -148,9 +148,9 @@
         width: 40%;
         height: 54%;
     }
-    .four-main .slider-case{
+    /* .four-main .slider-case{
         margin-top: 60px;
-    }
+    } */
     .case-posts .item .text h4{
         font-size: 14px;
     }
@@ -2330,6 +2330,26 @@
         height: 93%;
         width: 33%;
         top: 18%;
+        right: -5%;
+    }
+    .category-items .category-block .right .item::before{
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        content: "";
+        position: absolute;
+        background-image: url(../img/analityc_hover.png);
+        height: 100%;
+        width: 36%;
+        top: 20%;
+        right: -5%;
+    }
+    .category-items .category-block .right .item:hover::before{
+        opacity: 1;
+        height: 100%;
+        width: 36%;
+        top: 20%;
         right: -5%;
     }
     /* digital-main */
