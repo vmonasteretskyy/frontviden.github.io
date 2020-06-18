@@ -1104,6 +1104,8 @@ footer .contact-info{
     width: 50%;
     height: 44%;
     z-index: -1;
+    transition: .5s ease;
+    transform: translateX(50%);
 }
 .case-body-main::before{
     /* transform: rotate(180deg); */
@@ -1628,7 +1630,7 @@ footer .contact-info{
     width: 80%;
     height: 50%;
     z-index: -1;
-    transform: translateY(-110%);
+    transform: translateY(110%);
     transition: 1s ease;
 }
 .pr-policy::before{
