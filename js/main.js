@@ -33,24 +33,8 @@ window.onload = function() {
 
 };
 
-
-// This code for scroll-animations case-item (case-main-page) ----------------------------
-var casePosts = document.querySelectorAll('.case-body-main .case-posts .item');
-
-for(let i = 0; i < casePosts.length; i++){
-    if(i == 0 || i == 3 || i == 6){
-        casePosts[i].style.cssText = "transform: translateY(-10%); opacity: 0; ";
-    }
-    if(i == 1 || i == 4 || i == 7){
-        casePosts[i].style.cssText = "transform: translateY(-20%); opacity: 0;";
-    }
-    if(i == 2 || i == 5 || i == 8){
-        casePosts[i].style.cssText = "transform: translateY(-30%); opacity: 0;";
-    }
-}
-
-window.onscroll = function() {
 // Scroll menu --------------------------------------
+window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
 
     if(scrolled <= 300){
@@ -58,107 +42,6 @@ window.onscroll = function() {
     }else{
         document.getElementById('menu-line').classList.add("other-page-header");
     }
-
-// Show element when page is scroll --------------------------------------
-    var windowSize = document.documentElement.clientWidth,
-        caseMain = document.querySelector('.case-body-main');
-
-    if(windowSize <= 1920 && windowSize > 1601){ 
-        if(caseMain && scrolled > 0){
-            document.querySelector('main').classList.add("scrollShowElement");
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 2){
-                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
-                }
-            }
-        }
-        if(caseMain && scrolled >= 200){
-            document.querySelector('main').classList.add("scrollShowElement_row2");
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 5 && i > 2){
-                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
-                }
-            }
-        }
-        if(caseMain && scrolled >= 600){
-            document.querySelector('main').classList.add("scrollShowElement_row3");
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 8 && i > 3){
-                    casePosts[i].style.cssText = "transform: translateY(0%); opacity: 1;";
-                }
-            }
-        }
-    }
-
-    if(windowSize <= 1600){ 
-        if(caseMain && scrolled >= 0){
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 2){
-                    casePosts[i].style.cssText = "transform: translateY(0%);";
-                }
-            }
-        }
-        if(caseMain && scrolled >= 100){
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 5 && i > 2){
-                    casePosts[i].style.cssText = "transform: translateY(0%);";
-                }
-            }
-        }
-        if(caseMain && scrolled >= 400){
-            for(let i = 0; i < casePosts.length; i++){
-                if(i <= 8 && i > 3){
-                    casePosts[i].style.cssText = "transform: translateY(0%);";
-                }
-            }
-        }
-    }
-    // Service animation blocks (index-page) ----------
-    var indexMain = document.querySelector('.first-main');
-
-    if(windowSize <= 1920 && windowSize > 1600){ 
-        if(indexMain && scrolled >= 2200){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 1600 && windowSize > 1300){
-        if(indexMain && scrolled >= 1800){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 1300 && windowSize >= 1150){
-        if(indexMain && scrolled >= 1400){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 1150 && windowSize > 992){
-        if(indexMain && scrolled >= 1100){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 992){
-        if(indexMain){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }
-
-    // Indicator animation block (about-page) ------------
-    var about = document.querySelector('.about-top');
-
-    if(windowSize <= 1920 && windowSize >= 1600){
-        if(about && scrolled > 3100){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 1600 && windowSize >= 1150){
-        if(about && scrolled > 2200){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 1150 && windowSize >= 992){
-        if(about && scrolled > 1800){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }else if(windowSize <= 992){
-        if(about){
-            document.querySelector('main').classList.add("scrollShowElement");
-        }
-    }
-
 }
 
 // Menu show more ------------------------------------
