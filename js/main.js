@@ -1,9 +1,14 @@
 $(document).ready(function () {
-    $(function () {
-        if($('#select-style')){
+//     $(function () {
+//         if($('#select-style')){
+//             $('#select-style').styler();
+//         }
+//     });
+    (function ($) {
+        $(function () {
             $('#select-style').styler();
-        }
-    });
+        });
+    })(jQuery);
 });
 
 // Show element when page is laod -------------------
